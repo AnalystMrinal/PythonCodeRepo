@@ -67,6 +67,30 @@ Specific_Results = pd.DataFrame(Result.fetchall or Result.Fetchmany(size=4))
 
 
 
+# import requests
+# from bs4 import BeautifulSoup
 
+# WEBSCRAPING 
+
+
+
+
+
+# Checking the Data 
+
+DataFrame.describe() - Like "Summary()" in R Programming - Provides everything except for median
+DataFrame.info() - Like STR in R Programming - Data Type, Missing Values, Data Structure - Like class in R Programming
+
+
+
+# Getting specific data from SQL with different JOINS
+# Getting Specific Data Types using DataFrame._get_numeric_data()
+# Changing Data Types
+# Dropping Unnecessary columns using DataFrame.drop(columns=['col1'],['col2'])
+# Dealing with Missing Data
+# Dealing with Skewed Data - Outliers
+# Dealing with imbalanced Data - Stratified Sampling
+# IFELSE Statements for cleansing and extraction
+# Running all the models
 
 
