@@ -24,4 +24,49 @@ Password.send_keys('@n@lyst1994')
 LoginButton = Driver2.find_element_by_xpath('/html/body/div[3]/main/div/form/div[4]/input[9]')
 LoginButton.click()
 
-#
+
+
+
+# OS Package:
+
+import os
+
+# Checking Directory
+
+os.listdir('Path')
+
+
+
+
+# Pandas Package:
+
+import pandas as pd
+
+# Manual DataFrame
+
+pd.DataFrame({"Column_1":[],
+              "Column_2":[],
+              "Column_3":[]})
+              
+# Importing Excel or CSV File
+
+pd.read_csv('Drive:\\path\\FileName')
+
+
+
+
+# pip install sqlalchemy - from sqlalchemy import create_engine
+
+# Importing Data from Relational Database
+
+Path = create_engine('Drive:\\database_path\\database.db')
+Connect = path.connect()
+Result = connect.execute("SELECT * FROM table")
+Specific_Results = pd.DataFrame(Result.fetchall or Result.Fetchmany(size=4))
+
+
+
+
+
+
+
