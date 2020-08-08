@@ -1,0 +1,25 @@
+# Selenium Web Automation - Find Below:
+
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+# With Keys
+
+Driver = webdriver.Firefox(executable_path='C:\\Users\\Mrinu\\Downloads\\geckodriver-v0.27.0-win64\\geckodriver')
+Driver.get('https://stackoverflow.com/')
+SearchBox = Driver.find_element_by_xpath('/html/body/header/div/form/div/input')
+SearchBox.send_keys('Selenium Automation')
+SearchBox.send_keys(Keys.ENTER)
+
+# With Button
+
+Driver2 = webdriver.Firefox(executable_path='C:\\Users\\Mrinu\\Downloads\\geckodriver-v0.27.0-win64\\geckodriver')
+Driver2.get('https://github.com/')
+SignInButton = Driver2.find_element_by_xpath('/html/body/div[1]/header/div/div[2]/div[2]/a[1]')
+SignInButton.click()
+LoginID = Driver2.find_element_by_xpath('//*[@id="login_field"]')
+LoginID.send_keys('AnalystMrinal')
+Password = Driver2.find_element_by_xpath('//*[@id="password"]')
+Password.send_keys('@n@lyst1994')
+LoginButton = Driver2.find_element_by_xpath('/html/body/div[3]/main/div/form/div[4]/input[9]')
+LoginButton.click()
