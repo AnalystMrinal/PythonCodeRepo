@@ -91,6 +91,7 @@ DataFrame.info() - Like STR in R Programming - Data Type, Missing Values, Data S
 # Dealing with Skewed Data - Outliers
 # Dealing with imbalanced Data - Stratified Sampling
 # IFELSE Statements for cleansing and extraction
+# Powerful Visual Presentations with Plotly
 # Running all the models
 
 
