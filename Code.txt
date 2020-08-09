@@ -91,11 +91,15 @@ DataFrame.info() - Like STR in R Programming - Data Type, Missing Values, Data S
 
 Elements within the DataFrame Correction and Extraction:
 
-Spelling Mistakes within Ordinal Discrete Data - 
+Spelling Mistakes within Ordinal Discrete And Missing Data to NaN - 
+
 
 
 
 Dealing with Missing Data - 
+
+DataFrame['Column_Name'] = DataFrame['Column_Name'].fillna(DataFrame['Column_Name'].median())
+
 
 
 
@@ -105,11 +109,19 @@ Dealing with Skewed Data - Outliers
 
 
 
+Dealing with imbalanced Data - Stratified Sampling
+
+
+
 
 
 Python Joins And Data Retrieval: 
 
+pd.merge(DataFrame_1,DataFrame_2,how='inner' or 'left' or 'right' or 'outer', on = 'Common_Column')
 
+DataFrame['Column_Name'].unique()
+
+DataFrame[(DataFrame['Column'] != <> Some_Value) & (DataFrame['Column'] != <> Some_Value)]
 
 
 
@@ -172,13 +184,6 @@ SUM(), COUNT(), AVG(), Max(), Min()
 
 
 -- CASE Function - WHERE, THEN AND ELSE STATEMENTS
-
-
-
-
-
-Dealing with imbalanced Data - Stratified Sampling
-
 
 
 
