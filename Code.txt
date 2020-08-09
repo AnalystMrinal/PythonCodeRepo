@@ -89,13 +89,28 @@ DataFrame.info() - Like STR in R Programming - Data Type, Missing Values, Data S
 
 # Changing the Headings: DataFrame.rename(columns={"Col1":"New_Col1","Col2":"New_Col2"}) or 
 
-Elements within the DataFrame:
+Elements within the DataFrame Correction and Extraction:
+
+Spelling Mistakes within Ordinal Discrete Data - 
+
+
 
 Dealing with Missing Data - 
 
 
 
 Dealing with Skewed Data - Outliers
+
+
+
+
+Python Joins And SQL Joins And Data Retreival
+
+
+
+
+Dealing with imbalanced Data - Stratified Sampling
+
 
 
 
@@ -113,9 +128,10 @@ Dealing with Skewed Data - Outliers
 Or getting Specific Data Types using DataFrame._get_numeric_data() or Dropping Unnecessary Rows/Columns using df_df.iloc[[0,1,2,3,4],0:4].
 
 
-# Dealing with imbalanced Data - Stratified Sampling
-# Getting specific data from SQL with different JOINS
-# IFELSE Statements for cleansing and extraction
+
 # Powerful Visual Presentations with Plotly
+
+
+
 # How to use Classes - Object Oriented Programming and Selenium for Automation in Data Science.
 
