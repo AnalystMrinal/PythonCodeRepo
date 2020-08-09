@@ -46,7 +46,7 @@ import pandas as pd
 
 pd.DataFrame({"Column_1":[],
               "Column_2":[],
-              "Column_3":[]})
+              "Column_3":[]},index=['Row1','Row2'])
               
 # Importing Excel or CSV File
 
@@ -87,7 +87,19 @@ DataFrame.info() - Like STR in R Programming - Data Type, Missing Values, Data S
 
 
 
-# Changing the Headings or Elements within the DataFrame
+# Changing the Headings: DataFrame.rename(columns={"Col1":"New_Col1","Col2":"New_Col2"}) or 
+
+Elements within the DataFrame:
+
+Dealing with Missing Data - 
+
+
+
+Dealing with Skewed Data - Outliers
+
+
+
+
 # Elements within the DataFrame - Int (Discrete Data), Float (Continuous), String with multiple levels - Ordinal or Nominal
   Anova - Dep Var (Continuous), Indep Var (Discrete)
   Regression - Dep Var (Continuous), Indep Var (Continuous)
@@ -96,10 +108,11 @@ DataFrame.info() - Like STR in R Programming - Data Type, Missing Values, Data S
   Logistic Regression - Dep Var (Discrete) , Indep Var (Continuous)
   Time Series Data - Time Series Structure
 
-# Convert to appropriate Data Types necessary for above Models and also Multiple Levels need to be turned into Dummy Variables. Or getting Specific Data Types using DataFrame._get_numeric_data() or Dropping Unnecessary Rows/Columns using df_df.iloc[[0,1,2,3,4],0:4].
+# Convert to appropriate Data Types necessary - DataFrame['Column_Name'].astype(float or int) and Multiple Levels Dummy Variables - pd.get_dummies(DataFrame,prefix=
+['Column Name']) - Discrete Binary
+Or getting Specific Data Types using DataFrame._get_numeric_data() or Dropping Unnecessary Rows/Columns using df_df.iloc[[0,1,2,3,4],0:4].
 
-# Dealing with Missing Data
-# Dealing with Skewed Data - Outliers
+
 # Dealing with imbalanced Data - Stratified Sampling
 # Getting specific data from SQL with different JOINS
 # IFELSE Statements for cleansing and extraction
