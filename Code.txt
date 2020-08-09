@@ -78,6 +78,9 @@ Specific_Results = pd.DataFrame(Result.fetchall or Result.Fetchmany(size=4))
 
 
 
+
+
+
 # Checking the Data 
 
 DataFrame.describe() - Like "Summary()" in R Programming - Provides everything except for median
@@ -93,23 +96,51 @@ Elements within the DataFrame Correction and Extraction:
 
 Spelling Mistakes within Ordinal Discrete And Missing Data to NaN - 
 
+DataFrame['Column_Name'].replace('Element','Another_Element_Of_Choice',inplace=True)
+
+
+
+
 
 
 
 Dealing with Missing Data - 
+
+Detection - DataFrame['Column_Name'].info() or DataFrame.info()
 
 DataFrame['Column_Name'] = DataFrame['Column_Name'].fillna(DataFrame['Column_Name'].median())
 
 
 
 
+
+
+
 Dealing with Skewed Data - Outliers
+
+Detection - DataFrame['Column_Name'].describe() or DataFrame.describe()
+            DataFrame['Column_Name'].median() or DataFrame.median()
+Max_Threshold = DataFrame['Column'].quantile(0.95)
+Min_Threshold = DataFrame['Column'].quantile(0.05)
+
+DataFrame[(DataFrame['Column']<Max_Threshold) & (DataFrame['Column']>Min_Threshold)]
+
+
+
+
+
 
 
 
 
 
 Dealing with imbalanced Data - Stratified Sampling
+
+
+
+
+
+
 
 
 
