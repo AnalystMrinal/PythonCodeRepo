@@ -226,6 +226,10 @@ SUM(), COUNT(), AVG(), Max(), Min()
   Random Forest (Classification Model) - Dep Var (Discrete), Indep Var (Discrete, Continuous)
   Logistic Regression - Dep Var (Discrete) , Indep Var (Continuous)
   Time Series Data - Time Series Structure
+  Recency, Frequency & Monetary [RFM]
+  Sentiment Analysis
+  Market Basket Analysis
+  Machine Learning
 
 # Convert to appropriate Data Types necessary - DataFrame['Column_Name'].astype(float or int) and Multiple Levels Dummy Variables - pd.get_dummies(DataFrame,prefix=
 ['Column Name']) - Discrete Binary
