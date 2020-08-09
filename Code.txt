@@ -104,7 +104,75 @@ Dealing with Skewed Data - Outliers
 
 
 
-Python Joins And SQL Joins And Data Retreival
+
+
+
+Python Joins And Data Retrieval: 
+
+
+
+
+
+
+SQL Joins And Data Retrieval:
+
+SELECT * FROM Mrinal_Routine;
+
+SELECT Activity_ID FROM Mrinal_Routine
+UNION
+SELECT Activity_Def FROM Activity_Details;
+
+SELECT Activities FROM Mrinal_Routine WHERE Calories_Burnt > 500;
+SELECT AVG(Calories_Burnt) FROM Mrinal_Routine;
+SELECT Activities,Calories_Burnt FROM Mrinal_Routine WHERE Calories_Burnt > (SELECT AVG(Calories_Burnt) FROM Mrinal_Routine);
+
+INSERT INTO Mrinal_Routine (Day_No, Activities, Calories_Burnt, Calories_Gained, Activity_ID) VALUES (10,"Water Biking",200,0,"WB1");
+
+SELECT * FROM Activity_Details;
+
+INSERT INTO Activity_Details (Activity_ID, Activity_Def, Duration_Hours) VALUES ("WB1","Enhances Reaction Speed",1);
+
+DELETE FROM Activity_Details WHERE Activity_ID = "NO2";
+
+UPDATE Activity_Details
+SET Activity_ID = "BUN2"
+WHERE Activity_ID = "BUN1"; 
+
+DELETE FROM  Mrinal_Routine WHERE Day_No = 6;
+
+UPDATE Mrinal_Routine
+SET Activities = "Bungee Jumping"
+WHERE Day_No = 6;
+
+SELECT Mrinal_Routine.Duration_Hours, Activity_Details.Duration_Hours FROM Mrinal_Routine INNER JOIN Activity_Details
+ON Mrinal_Routine.Activity_ID=Activity_Details.Activity_ID;
+
+SELECT Activity_Details.Duration_Hours, COUNT(Mrinal_Routine.Activities) 
+FROM Activity_Details 
+INNER JOIN Mrinal_Routine 
+ON Activity_Details.Activity_ID = Mrinal_Routine.Activity_ID 
+GROUP BY Activity_Details.Duration_Hours 
+ORDER BY Activity_Details.Activity_ID;
+
+SELECT M.Activities, M.Calories_Burnt, A.Activity_Def
+FROM Mrinal_Routine M
+LEFT JOIN Activity_Details A
+ON M.Activity_ID=A.Activity_ID
+UNION
+SELECT M.Activities, M.Calories_Burnt, A.Activity_Def
+FROM Mrinal_Routine M
+LEFT JOIN Activity_Details A
+ON M.Activity_ID=A.Activity_ID;
+
+-- LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN & CROSS JOIN [LEFT JOIN UNION RIGHT JOIN]
+
+SELECT DISTINCT(Activities) FROM Mrinal_Routine;
+
+SUM(), COUNT(), AVG(), Max(), Min()
+
+
+-- CASE Function - WHERE, THEN AND ELSE STATEMENTS
+
 
 
 
