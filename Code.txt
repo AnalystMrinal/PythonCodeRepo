@@ -76,6 +76,8 @@ Specific_Results = pd.DataFrame(Result.fetchall or Result.Fetchmany(size=4))
 
 
 
+
+
 # Checking the Data 
 
 DataFrame.describe() - Like "Summary()" in R Programming - Provides everything except for median
@@ -83,15 +85,24 @@ DataFrame.info() - Like STR in R Programming - Data Type, Missing Values, Data S
 
 
 
-# Getting specific data from SQL with different JOINS
-# Getting Specific Data Types using DataFrame._get_numeric_data()
-# Changing Data Types
-# Dropping Unnecessary columns using DataFrame.drop(columns=['col1'],['col2'])
+
+
+# Changing the Headings or Elements within the DataFrame
+# Elements within the DataFrame - Int (Discrete Data), Float (Continuous), String with multiple levels - Ordinal or Nominal
+  Anova - Dep Var (Continuous), Indep Var (Discrete)
+  Regression - Dep Var (Continuous), Indep Var (Continuous)
+  CART (Decision Trees) - Dep Var (Discrete), Indep Var (Discrete, Continuous)
+  Random Forest (Classification Model) - Dep Var (Discrete), Indep Var (Discrete, Continuous)
+  Logistic Regression - Dep Var (Discrete) , Indep Var (Continuous)
+  Time Series Data - Time Series Structure
+
+# Convert to appropriate Data Types necessary for above Models and also Multiple Levels need to be turned into Dummy Variables. Or getting Specific Data Types using DataFrame._get_numeric_data() or Dropping Unnecessary Rows/Columns using df_df.iloc[[0,1,2,3,4],0:4].
+
 # Dealing with Missing Data
 # Dealing with Skewed Data - Outliers
 # Dealing with imbalanced Data - Stratified Sampling
+# Getting specific data from SQL with different JOINS
 # IFELSE Statements for cleansing and extraction
 # Powerful Visual Presentations with Plotly
-# Running all the models
 # How to use Classes - Object Oriented Programming and Selenium for Automation in Data Science.
 
