@@ -136,6 +136,7 @@ DataFrame[(DataFrame['Column']<Max_Threshold) & (DataFrame['Column']>Min_Thresho
 
 Dealing with imbalanced Data - Stratified Sampling
 
+DataFrame.sample(Number_Of_Rows)
 
 
 
