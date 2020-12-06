@@ -27,31 +27,6 @@ LoginButton.click()
 
 
 
-# OS Package:
-
-import os
-
-# Checking Directory
-
-os.listdir('Path')
-
-
-
-
-# Pandas Package:
-
-import pandas as pd
-
-# Manual DataFrame
-
-pd.DataFrame({"Column_1":[],
-              "Column_2":[],
-              "Column_3":[]},index=['Row1','Row2'])
-              
-# Importing Excel or CSV File
-
-pd.read_csv('Drive:\\path\\FileName')
-
 
 
 
@@ -77,8 +52,21 @@ Specific_Results = pd.DataFrame(Result.fetchall or Result.Fetchmany(size=4))
 
 
 
+# OS Package:
+
+import os 
+
+# Checking Directory:
+
+os.listdir('Path')
+              
+# Importing Excel or CSV File
+
+pd.read_csv('Drive:\\path\\FileName')
 
 
+
+Choosing Appropriate Data Types:
 
 
 # Checking the Data 
@@ -87,19 +75,21 @@ DataFrame.describe() - Like "Summary()" in R Programming - Provides everything e
 DataFrame.info() - Like STR in R Programming - Data Type, Missing Values, Data Structure - Like class in R Programming
 
 
+# Elements within the DataFrame - Int (Discrete Data), Float (Continuous), String with multiple levels - Ordinal or Nominal
+  Anova - Dep Var (Continuous), Indep Var (Discrete)
+  Regression - Dep Var (Continuous), Indep Var (Continuous)
+  CART (Decision Trees) - Dep Var (Discrete), Indep Var (Discrete, Continuous)
+  Random Forest (Classification Model) - Dep Var (Discrete), Indep Var (Discrete, Continuous)
+  Logistic Regression - Dep Var (Discrete) , Indep Var (Continuous)
+  Time Series Data - Time Series Structure
+  Recency, Frequency & Monetary [RFM]
+  Sentiment Analysis
+  Market Basket Analysis
+  Machine Learning
 
-
-
-# Changing the Headings: DataFrame.rename(columns={"Col1":"New_Col1","Col2":"New_Col2"}) or 
-
-Elements within the DataFrame Correction and Extraction:
-
-Spelling Mistakes within Ordinal Discrete And Missing Data to NaN - 
-
-DataFrame['Column_Name'].replace('Element','Another_Element_Of_Choice',inplace=True)
-
-
-
+# Convert to appropriate Data Types necessary - DataFrame['Column_Name'].astype(float or int) and Multiple Levels Dummy Variables - pd.get_dummies(DataFrame,prefix=
+['Column Name']) - Discrete Binary
+Or getting Specific Data Types using DataFrame._get_numeric_data() or Dropping Unnecessary Rows/Columns using df_df.iloc[[0,1,2,3,4],0:4].
 
 
 
@@ -109,8 +99,6 @@ Dealing with Missing Data -
 Detection - DataFrame['Column_Name'].info() or DataFrame.info()
 
 DataFrame['Column_Name'] = DataFrame['Column_Name'].fillna(DataFrame['Column_Name'].median())
-
-
 
 
 
@@ -129,6 +117,15 @@ DataFrame[(DataFrame['Column']<Max_Threshold) & (DataFrame['Column']>Min_Thresho
 
 
 
+Data Structures - Time Series Forecasting vs Other Models - Data Frames vs Time Series Structure:
+
+# Changing the Headings: DataFrame.rename(columns={"Col1":"New_Col1","Col2":"New_Col2"}) or 
+
+Elements within the DataFrame Correction and Extraction:
+
+Spelling Mistakes within Ordinal Discrete And Missing Data to NaN - 
+
+DataFrame['Column_Name'].replace('Element','Another_Element_Of_Choice',inplace=True)
 
 
 
@@ -137,11 +134,6 @@ DataFrame[(DataFrame['Column']<Max_Threshold) & (DataFrame['Column']>Min_Thresho
 Dealing with imbalanced Data - Stratified Sampling
 
 DataFrame.sample(Number_Of_Rows)
-
-
-
-
-
 
 
 
@@ -216,25 +208,6 @@ SUM(), COUNT(), AVG(), Max(), Min()
 
 
 -- CASE Function - WHERE, THEN AND ELSE STATEMENTS
-
-
-
-
-# Elements within the DataFrame - Int (Discrete Data), Float (Continuous), String with multiple levels - Ordinal or Nominal
-  Anova - Dep Var (Continuous), Indep Var (Discrete)
-  Regression - Dep Var (Continuous), Indep Var (Continuous)
-  CART (Decision Trees) - Dep Var (Discrete), Indep Var (Discrete, Continuous)
-  Random Forest (Classification Model) - Dep Var (Discrete), Indep Var (Discrete, Continuous)
-  Logistic Regression - Dep Var (Discrete) , Indep Var (Continuous)
-  Time Series Data - Time Series Structure
-  Recency, Frequency & Monetary [RFM]
-  Sentiment Analysis
-  Market Basket Analysis
-  Machine Learning
-
-# Convert to appropriate Data Types necessary - DataFrame['Column_Name'].astype(float or int) and Multiple Levels Dummy Variables - pd.get_dummies(DataFrame,prefix=
-['Column Name']) - Discrete Binary
-Or getting Specific Data Types using DataFrame._get_numeric_data() or Dropping Unnecessary Rows/Columns using df_df.iloc[[0,1,2,3,4],0:4].
 
 
 
