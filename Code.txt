@@ -1,3 +1,21 @@
+Complete Checklist:
+
+1) Smote [Synthetic Minority Oversampling Technique] & ROC - AUC - nn values 3-5 or more or less than threshold
+IRDA AND ICMR Regulatory Authority of India
+2) Missing Values & Outliers
+3) Data Types
+4) Multicollinearity
+5) Model Building
+6) Performance Metrics
+7) Bagging
+8) Actiionable Insights
+9) Data Structures - Time Series Data Structure
+10) Dimensionality Reduction - Principal Component Analysis [PCA] / Factor Analysis
+11) Time Series Decomposition - 4 Components
+12) Stationarity Test - Auto Correlation Function / Partial Auto correlation Function - P, D ,Q Values, KPSS Test
+
+
+
 # Selenium Web Automation - Find Below:
 
 from selenium import webdriver
