@@ -13,6 +13,7 @@ IRDA AND ICMR Regulatory Authority of India
 10) Dimensionality Reduction - Principal Component Analysis [PCA] / Factor Analysis
 11) Time Series Decomposition - 4 Components
 12) Stationarity Test - Auto Correlation Function / Partial Auto correlation Function - P, D ,Q Values, KPSS Test
+13) Scaling - Standardizing Data with Z scores or Sigmoid Fuction
 
 
 
